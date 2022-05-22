@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Encriptador ONE - Alura - Patricio Kanaszyc</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <head>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <a href="https://www.aluracursos.com/" target="_blank"><img src="img/logo.png" alt="logo Alura" id="logoAlura"></a>
+                </div>
+            </div>
+    </head>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                    <div>
+                        <img id="imagenDesencriptado" class="imagenDesencriptado" src="./img/input.png" alt="Imágen de inicio de texto desencriptado" onclick="esconderImagenDesencriptado()">
+                    </div>
+                    <div class="form-group">
+                        <textarea type="text" class="form-control textoDesencriptado desencriptadoOculto" name="textoDesencriptado" id="textoDesencriptado" cols="30" rows="27" placeholder="Ingrese el texto aquí"></textarea>
+                    </div>
+                    <div>
+                        <label for="restriccion" class="margenSuperior"><img src="img/signo-exclamacion.png" alt="signo exclamación" class="signoExclamacion"> Solo letras minúsculas y sin acentos</label>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                <div class="botonesCentrado">
+                                    <button class="btn btn-outline-primary margenSuperior tamanioBoton" type="button" id="botonEncriptar">Encriptar</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
+                                <div class="botonesCentrado">
+                                    <button type="button" class="btn btn-outline-primary margenSuperior tamanioBoton" id="botonDesencriptar">Desencriptar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <div>
+                        <img id="imagenEncriptado" class="imagenEncriptado" src="./img/1.png" alt="Imágen de inicio de texto encriptado">
+                    </div>
+                    <div class="form-group">
+                        <textarea disabled type="text" class="form-control textoEncriptado encriptadoOculto" name="textoEncriptado" id="textoEncriptado" cols="30" rows="27" placeholder="Ningun mensaje fue encontrado. Ingrese el texto que desee encriptar
+                                        o desencriptar "></textarea>
+                        <div class="botonesCentrado">
+                            <button type="button" class="btn btn-outline-primary botonEncriptadoOculto margenSuperiorBoton tamanioBoton" id="botonCopiar">Copiar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <div class="copyright ">
+                        <label for="copyright" class="margenSuperior">&#169;Copyright <a href="https://github.com/PatoK93" target="_blank">Patricio Agustín Kanaszyc</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
